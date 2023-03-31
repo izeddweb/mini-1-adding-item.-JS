@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- normalise css -->
-  <link rel="stylesheet" href="styles/normalise.css">
-  <!-- link css -->
-  <link rel="stylesheet" href="styles/main.css">
-  <title>Document</title>
-</head>
-<body>
-  <h1>  test</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- normalise css -->
+    <link rel="stylesheet" href="styles/normalise.css" />
+    <!-- link css -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--   star header -->
+    <header class="header d-flex-around">
+      <div class="logo">zed .D</div>
+      <div class="search-bar d-flex">
+        <input type="search" name="search" id="search" placeholder="search"/>
+        <span>search</span>
+      </div>
+    </header>
+    <!--   end header -->
+    <!--   star main-home -->
+    <main class="main-home">
+      <div class="container d-f-colomn">
+        <h4>Adding Items:</h4>
+        <form class="form">
+          <input type="text" placeholder="Adding Items" />
+          <button class="btn">submit</button>
+        </form>
+        <div class="content d-flex">
+          <ul class="list-items">
+            <li class="item">item1 <button>delete</button></li>
+            <li class="item">item2 <button>delete</button></li>
+            <li class="item">item3 <button>delete</button></li>
+            <li class="item">item4 <button>delete</button></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <!--   endmain-home -->
 
-
-
-
-
-
-
-
-  <script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
