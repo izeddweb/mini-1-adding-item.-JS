@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- normalise css -->
-  <link rel="stylesheet" href="styles/normalise.css">
-  <!-- link css -->
-  <link rel="stylesheet" href="styles/main.css">
-  <title>Document</title>
-</head>
-<body>
-  <h1>  test</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- normalise css -->
+    <link rel="stylesheet" href="styles/normalise.css" />
+    <!-- link css -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--   star header -->
+    <header class="header d-flex-around">
+      <div class="logo">zed .D</div>
+      <div class="search-bar d-flex">
+        <input type="search" name="search" id="search" placeholder="search" />
+        <button class="btn-search">search</button>
+      </div>
+    </header>
+    <!--   end header -->
+    <!--   star main-home -->
+    <main class="main-home">
+      <div class="container d-f-colomn">
+        <h5>Adding Items:</h5>
+        <!--   star form -->
+        <form class="form">
+          <input type="text" placeholder="Adding Items" />
+          <button class="btn-sub" type="button">Add</button>
+        </form>
+        <!--   end form -->
+        <div class="content d-flex">
+          <ul id="ul" class="list-items d-f-colomn"></ul>
+        </div>
+      </div>
+    </main>
+    <!--   end main-home -->
 
-
-
-
-
-
-
-
-  <script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
