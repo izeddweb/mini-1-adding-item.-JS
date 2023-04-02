@@ -6,9 +6,20 @@ const inputAddItems = document.querySelector('input[type="text"]');
 const btnSubmit = document.querySelector(".btn-sub");
 const listItem = document.querySelector(".list-items");
 const listItems = document.getElementById("ul");
-// let li =document.querySelectorAll('.item')
 
 //   set   function
+btnSearch.addEventListener("click", filterItem);
+function filterItem() {
+  let allLi = document.querySelectorAll(".item");
+  allLi.forEach((li) => {
+    if (li.textContent === inputSearch.value) {
+      allLi.forEach((li) => {
+        li.style.opacity = 0.4;
+      });
+      li.style.opacity = 1;
+    }
+  });
+}
 
 btnSubmit.addEventListener("click", addItems);
 listItems.addEventListener("dblclick", removeItems);
@@ -29,7 +40,7 @@ function addItems() {
 
 //  remove item
 function removeItems(e) {
-  if(confirm(" Remove It !!")){
-    listItems.removeChild(e.target)
+  if (confirm(" Remove It !!")) {
+    listItems.removeChild(e.target);
   }
 }
