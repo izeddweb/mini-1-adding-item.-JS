@@ -15,30 +15,27 @@
     <header class="header d-flex-around">
       <div class="logo">zed .D</div>
       <div class="search-bar d-flex">
-        <input type="search" name="search" id="search" placeholder="search"/>
-        <span>search</span>
+        <input type="search" name="search" id="search" placeholder="search" />
+        <button class="btn-search">search</button>
       </div>
     </header>
     <!--   end header -->
     <!--   star main-home -->
     <main class="main-home">
       <div class="container d-f-colomn">
-        <h4>Adding Items:</h4>
+        <h5>Adding Items:</h5>
+        <!--   star form -->
         <form class="form">
           <input type="text" placeholder="Adding Items" />
-          <button class="btn">submit</button>
+          <button class="btn-sub" type="button">Add</button>
         </form>
+        <!--   end form -->
         <div class="content d-flex">
-          <ul class="list-items">
-            <li class="item">item1 <button>delete</button></li>
-            <li class="item">item2 <button>delete</button></li>
-            <li class="item">item3 <button>delete</button></li>
-            <li class="item">item4 <button>delete</button></li>
-          </ul>
+          <ul id="ul" class="list-items d-f-colomn"></ul>
         </div>
       </div>
     </main>
-    <!--   endmain-home -->
+    <!--   end main-home -->
 
     <script src="main.js"></script>
   </body>

@@ -1,100 +1,119 @@
 /* font family */
-  @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
-  
-
-
-
-
-  body{
-    font-family:'Fasthand', cursive ;
-    background-color: #767373;
-    width: 100vw;
-    height: 100%;
-
-  }
-/*     ----------------General Classes             */
-  .container{
-    width: 90%;
-    margin: 30px auto;
-    background-color: #ccc;
-  }
-  .d-f-colomn{
-    display: flex;
-    flex-direction:column;
-  }
-  .d-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .d-flex-around {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  input{
-    width: 170px;
-    height: 40px;
-  }
-
-  /*              ----------- Star header */
-
-  header{
-    width: 100%;
-    height: 70px;
-    text-align: center;
-  }
-  header .logo{
-    width: 30%;
-    font-size: 80px;
-    text-align: center;
-    text-shadow: 0 0 10px red;
-    font-family: 'Lobster', cursive;
-  }
-  header .search-bar{
-    width: 70%;
-    height: 70px;
-  }
-  .search-bar input{
-    width: 70%;
-  }
-  .search-bar span{
-    font-size: 30px;
-    margin: 0 10px;
-  }
-
-  /*       ------------star main-home */
-  main{
-    background-color: #fff;
-    height: 100vh;
-    width: 100vw;
-  }
-  button{
-    width: 60px;
-    height: 40px;
-    background-color: #09a311;
-    margin: 0 20px;
-    border-radius: 7px;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
-    -o-border-radius: 7px;
-    border: none;
+body {
+  font-family: "Fasthand", cursive;
+  background-color: #767373;
+  width: 100vw;
+  height: 100%;
 }
-  h4{
-    font-size: 40px;
-    padding: 20px;
-    text-shadow: 0 0 10px red;
-  }
- form {
+/*     ----------------General Classes             */
+.container {
+  width: 90%;
+  margin: 30px auto;
+  background-color: #ccc;
+}
+.d-f-colomn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.d-flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+input {
+  width: 170px;
+  height: 40px;
+  text-align: center;
+  font-size: large;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+/*              ----------- Star header */
+
+header {
+  width: 100%;
+  height: 70px;
+  text-align: center;
+}
+header .logo {
+  width: 30%;
+  font-size: 80px;
+  text-align: center;
+  text-shadow: 0 0 10px red;
+  font-family: "Lobster", cursive;
+}
+header .search-bar {
+  width: 70%;
+  height: 70px;
+}
+.search-bar input {
+  width: 70%;
+}
+.search-bar span {
+  font-size: 30px;
+  margin: 0 10px;
+}
+
+/*       ------------star main-home */
+main {
+  background-color: #fff;
+  height: 100vh;
+  width: 100vw;
+}
+button {
+  width: 70px;
+  height: 40px;
+  background-color: #09a311;
+  margin: 0 20px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border: none;
+  font-size: large;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #09a311ba;
+}
+h5 {
+  font-size: 40px;
+  padding: 20px;
+  text-shadow: 0 0 10px red;
+}
+form {
   padding: 10px 20px;
- }
- .content{
+}
+.content {
   background-color: #b6aaaa;
   padding: 20px;
   height: auto;
- }
+}
 
+.list-items {
+  padding: 10px;
+  margin: 10px;
+}
+.list-items li {
+  font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 10px;
+  text-align: right;
+  left: -100px;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
 
